@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Test task</title>
+	    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+	    <link rel="stylesheet" href="lib/css/style.css">
+	    <script src="lib/js/jquery.js"></script>
+	    <script src="lib/bootstrap/js/validator.js"></script>
+	    <script src="lib/js/store.js"></script>
+	    <script src="lib/js/script.js"></script>
+  	</head>
+<body>
+<div class="col-sm-10 proposition-information" style="display: none;">
+<a class="btn btn-default back-to-first-step" href="#" role="button">Вернуться к 1му шагу</a>
+	<div class="container-fluid proposition-container">
+		<div class="col-md-4 first-proposition proposition">
+    		<h4 class="bg-info">Первое предложение</h4>
+    		<p class="bg-default">Описание первого предложения</p>
+			<p class="bg-success proposition-price"><span class="price">100</span><span class="currency">$</span></p>
+			<input type="hidden" class="default-price" value="100">
+		  	<div class="form-group">
+		    	<label for="country-description" class="control-label">Выберите валюту</label>
+			    <select class="form-control select-currency">
+				  	<option>USD</option>
+				  	<option>EUR</option>
+				  	<option>UAH</option>
+				</select>
+		  	</div>
+		  	<input type="hidden" class="form-price" value="100">
+		  	<input type="hidden" class="form-currency" value="USD">
+		  	<input type="hidden" class="form-proposition-number" value="1">
+		  	<button type="button" class="btn btn-primary select-proposition">Выбрать</button>
+  		</div>
+ 		<div class="col-md-4 second-proposition proposition">
+    		<h4 class="bg-info">Второе предложение</h4>
+    		<p class="bg-default">Описание второго предложения</p>
+			<p class="bg-success proposition-price"><span class="price">200</span><span class="currency">$</span></p>
+			<input type="hidden" class="default-price" value="200">
+		  	<div class="form-group">
+		    	<label for="country-description" class="control-label">Выберите валюту</label>
+			    <select class="form-control select-currency">
+				  	<option>USD</option>
+				  	<option>EUR</option>
+				  	<option>UAH</option>
+				</select>
+		  	</div>
+		  	<input type="hidden" class="form-price" value="200">
+		  	<input type="hidden" class="form-currency" value="USD">
+		  	<input type="hidden" class="form-proposition-number" value="2">
+		  	<button type="button" class="btn btn-primary select-proposition">Выбрать</button>
+  		</div>
+		<div class="col-md-4 third-proposition proposition">
+    		<h4 class="bg-info">Третье предложение</h4>
+    		<p class="bg-default">Описание третьего предложения</p>
+			<p class="bg-success proposition-price"><span class="price">300</span><span class="currency">$</span></p>
+			<input type="hidden" class="default-price" value="300">
+		  	<div class="form-group">
+		    	<label for="country-description" class="control-label">Выберите валюту</label>
+			    <select class="form-control select-currency">
+				  	<option>USD</option>
+				  	<option>EUR</option>
+				  	<option>UAH</option>
+				</select>
+		  	</div>
+		  	<input type="hidden" class="form-price" value="300">
+		  	<input type="hidden" class="form-currency" value="USD">
+		  	<input type="hidden" class="form-proposition-number" value="3">
+		  	<button type="button" class="btn btn-primary select-proposition">Выбрать</button>
+
+  		</div>
+	</div>
+</div>
+<div class="col-sm-6 customer-information" style="display: none;">
+	<form data-toggle="validator" role="form" class="firstStepForm">
+	  	<div class="form-group">
+	    	<label for="name" class="control-label">Имя</label>
+	    	<input type="text" class="form-control" id="name" data-error='Поле "Имя" обязательно к заполнению!' required>
+	    	<div class="help-block with-errors"></div>
+	  	</div>
+	 	<div class="form-group">
+	    	<label for="email" class="control-label">Email</label>
+	    	<input type="email" class="form-control" id="email" data-error='Укажите корректны Email!' required>
+	    	<div class="help-block with-errors"></div>
+	  	</div>
+	  	<div class="form-group">
+	    	<label for="country" class="control-label">Страна</label>
+	    	<input type="text" class="form-control" id="country"  data-error='Поле "Страна" обязательно к заполнению!' required>
+	    	<div class="help-block with-errors"></div>
+	  	</div>
+	  	  	<div class="form-group">
+	    	<label for="company-name" class="control-label">Название компании</label>
+	    	<input type="text" class="form-control" id="company-name" data-error='Поле "Название компании" обязательно к заполнению!' required>
+	    <div class="help-block with-errors"></div>
+	  	</div>
+	  	<div class="form-group">
+	    	<label for="company-description" class="control-label">Описание компании</label>
+	    	<textarea type="text" class="form-control" id="company-description" rows="10"></textarea>
+	    <div class="help-block with-errors"></div>
+	  	</div>
+	  	<div class="form-group">
+	    <button type="submit" class="btn btn-primary goto-next-step">Перейти ко 2му шагу</button>
+	  </div>
+	</form>	
+</div>
+
+
+</body>
+</html>
